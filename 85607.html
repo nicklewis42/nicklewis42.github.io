@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Nick's Recipes</title>
+        <style>
+body {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+summary{
+    font-size:larger;
+    color:blue;
+}
+
+table tr td {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+table tr:nth-child(odd) td {
+    background-color: lightblue;
+}
+
+table tr:nth-child(even) td {
+    background-color: lightgray;
+}
+
+li {
+    padding-bottom:4px;
+}
+        </style>
+        <script>
+function scale() {
+    var qtys = document.querySelectorAll(".quantity");
+    var scale = document.getElementById("factor").value;
+    if (scale < 0.01)
+        scale = 1;
+    for (var i = 0; i < qtys.length; i++) {
+        var v = qtys[i].getAttribute("data-value");
+        if (v != 0) {
+            qtys[i].innerHTML = Math.round(v * scale*10)/10;
+        }
+    }
+}
+        </script>
+    </head>
+    </body>
+        <input type='text' size='6' id='factor' onchange='scale();'>
+        <details>
+            <summary>3l Fryer guidelines</summary>
+            <p>Obviously the ingredients lists alternatives not ingredients just for this one recipe.</p>
+                <table>
+<tr><td>Fresh potato chips</td><td class='quantity' data-value='600'>600</td><td class='uom'>g</td><td>7-8 minutes at 160C</td></tr>
+<tr><td>Fresh fish</td><td class='quantity' data-value='450'>450</td><td class='uom'>g</td><td>5-7 minutes at 160C</td></tr>
+<tr><td>Chicken drumsticks</td><td class='quantity' data-value='4'>4</td><td class='uom'>pieces</td><td>12-15 minutes at 170C</td></tr>
+<tr><td>Veg eg Mushrooms Cauliflower</td><td class='quantity' data-value='8'>8</td><td class='uom'>pieces</td><td>2-3 minutes at 170C</td></tr>
+<tr><td>Frozen Chips</td><td class='quantity' data-value='450'>450</td><td class='uom'>g</td><td>5 minutes at 175C</td></tr>
+<tr><td>Potato Croquettes</td><td class='quantity' data-value='4'>4</td><td class='uom'>pieces</td><td>3-4 minutes at 175C</td></tr>
+<tr><td>Chicken Nuggets</td><td class='quantity' data-value='8'>8</td><td class='uom'>pieces</td><td>3-4 minutes at 180C</td></tr>
+<tr><td>Prawns</td><td class='quantity' data-value='10'>10</td><td class='uom'>pieces</td><td>3-4 minutes at 180C</td></tr>
+<tr><td>Camembert (breadcrumbed)</td><td class='quantity' data-value='3'>3</td><td class='uom'>pieces</td><td>2-3 minutes at 190C</td></tr>
+<tr><td>Doughnuts</td><td class='quantity' data-value='3'>3</td><td class='uom'>pieces</td><td>5-6 minutes at 190C</td></tr>
+<tr><td>Aubergine slices</td><td class='quantity' data-value='600'>600</td><td class='uom'>g</td><td>3-4 minutes at 190C</td></tr>
+                </table>
+            <ol>
+            </ol>
+        </details>
+        <details>
+            <summary>Air Fried Chips</summary>
+            <p>The Air Fryer makes great chips although it does take a bit more time and effort.</p>
+            <p>Don't skimp on the cooking time, they should be well browned and crispy.</p>
+            <ol>
+                <li>Set the fryer to 180 C.</li>
+                <li>Peel the potatoes and cut roughly into chips, aim for lots of angles rather than neatness.</li>
+                <li>Soak the chips for ten minutes in colde water.</li>
+                <li>Drain and remove excess water with Kitchen roll.</li>
+                <li>Toss the chips in a little oil, they should be coated in oil.</li>
+                <li>Air fry the chips turning them every five minutes, they should be done in 20 to 30 minutes.</li>
+            </ol>
+        </details>
+        <details>
+            <summary>Air Fried Jacket Potatoes</summary>
+            <p>Potatoes - You want a size so two or three will fit the Fryer.</p>
+            <p>Oil and salt for rubbing.</p>
+            <ol>
+                <li>Set the fryer to 200 C.</li>
+                <li>Thoroughly clean the potatoes.</li>
+                <li>Rub the skins in the salt and oil.</li>
+                <li>Put the potatoes in the fryer for 30 minutes.</li>
+                <li>Turn the spuds and cook for a further 20 minutes.</li>
+            </ol>
+        </details>
+        <details>
+            <summary>Air fried sausages</summary>
+            <p>The air fryer makes great sausages.</p>
+            <ol>
+                <li>Set the air fryer to 180 C.</li>
+                <li>Cook the sausages for 10 minutes.</li>
+                <li>Turn and cook for a further 5 minutes.</li>
+                <li>Rest for a few minutes, they will be very hot.</li>
+            </ol>
+        </details>
+        <details>
+            <summary>Air Fryer Toad in the Hole</summary>
+                <table>
+<tr><td>Milk</td><td class='quantity' data-value='100'>100</td><td class='uom'>ml</td><td></td></tr>
+<tr><td>Plain flour</td><td class='quantity' data-value='70'>70</td><td class='uom'>g</td><td></td></tr>
+<tr><td>Egg</td><td class='quantity' data-value='1'>1</td><td class='uom'></td><td></td></tr>
+<tr><td>Sausages</td><td class='quantity' data-value='4'>4</td><td class='uom'></td><td>(or maybe six?)</td></tr>
+                </table>
+            <ol>
+                <li>Put the sausages in a large ramikin with enough oil to cover the bottom and cook at 200C for three minutes</li>
+                <li>Beat flour, egg and milk to make a smooth batter.</li>
+                <li>Add batter and return to the air fryer until cooked, probably about 10 mins.</li>
+            </ol>
+        </details>
+        <details>
+            <summary>Apple tarts</summary>
+                <table>
+<tr><td>Puff pastry</td><td class='quantity' data-value='0'>&nbsp;</td><td class='uom'></td><td>Buy ready made</td></tr>
+<tr><td>Eating Apples</td><td class='quantity' data-value='0'>&nbsp;</td><td class='uom'></td><td></td></tr>
+                </table>
+            <ol>
+                <li>Roll out the puff pastry about 3-4 mm thick</li>
+                <li>Cut to size, either for individual or a large one. Rectangles are fine and simple to do.</li>
+                <li>Brush the pastry with egg, then put a layer of apple puree or very finely chopped apple on the pastry, leave about 15-20mm border.</li>
+                <li>Now layer thin slices of apple across the are that has the puree bed.</li>
+                <li>Sprinkle with caster sugar and pour over melted butter. Now brush the edges with egg.</li>
+                <li>Bake for about 20-25 minutes at gas 7.</li>
+            </ol>
+        </details>
+        <details>
+            <summary>Bacon and Egg Pasta</summary>
+                <table>
+<tr><td>Bacon</td><td class='quantity' data-value='4'>4</td><td class='uom'>rashers</td><td></td></tr>
+<tr><td>spaghetti</td><td class='quantity' data-value='250'>250</td><td class='uom'>g</td><td></td></tr>
+<tr><td>Grated parmesan</td><td class='quantity' data-value='50'>50</td><td class='uom'>g</td><td></td></tr>
+<tr><td>Cream</td><td class='quantity' data-value='150'>150</td><td class='uom'>ml</td><td></td></tr>
+<tr><td>Egg</td><td class='quantity' data-value='2'>2</td><td class='uom'>each</td><td></td></tr>
+<tr><td>Smoked Paprika</td><td class='quantity' data-value='0.5'>0.5</td><td class='uom'>teaspoon</td><td>optional, makes a smokier flavour.</td></tr>
+                </table>
+            <ol>
+                <li>Cut the bacon into thin strips, fry until crisp.</li>
+                <li>Boil the spaghetti until tender drain and return to pan</li>
+                <li>Beat the eggs, cheese cream and paprika in a bowl then add the bacon.</li>
+                <li>Pour over the hot pasta, toss well to mix, and return to the heat for a minute or two until thickened.</li>
+            </ol>
+        </details>
+        <details>
+            <summary>Baked Eggs</summary>
+            <p>Baked eggs</p>
+                <table>
+<tr><td>Egg</td><td class='quantity' data-value='1'>1</td><td class='uom'>ea</td><td></td></tr>
+                </table>
+            <ol>
+                <li>Grease a ramikin with butter</li>
+                <li>Crack an egg into the ramikin</li>
+                <li>Add a little cream and grated cheese or other topping</li>
+                <li>Air Fry at 150C for 10 minutes</li>
+            </ol>
+            <p>
+			Tweak the cooking time to taste it'll be a little less if you don't use any topping. You can also do two eggs in a bigger ramikin which might need a little longer cooking time.
+		</p>
+        </details>
+        <details>
+            <summary>Baked Rice Pudding</summary>
+            <p>Basic rice pudding can be zinged up with lemon zest,sultanas, cinnamon etc....</p>
+            <p>Try with a teaspoon of mixed spice and a teaspoon of cinnamon added to the liquid at the start and a handful of dried fruit mixed in later.</p>
+                <table>
+<tr><td>Milk</td><td class='quantity' data-value='600'>600</td><td class='uom'>ml</td><td></td></tr>
+<tr><td>Double Cream</td><td class='quantity' data-value='300'>300</td><td class='uom'>ml</td><td></td></tr>
+<tr><td>caster sugar</td><td class='quantity' data-value='25'>25</td><td class='uom'>g</td><td></td></tr>
+<tr><td>Butter</td><td class='quantity' data-value='25'>25</td><td class='uom'>g</td><td></td></tr>
+<tr><td>Pudding rice</td><td class='quantity' data-value='100'>100</td><td class='uom'>g</td><td></td></tr>
+                </table>
+            <ol>
+                <li>Pre heat oven to gas mark 1 (140C)</li>
+                <li>Put the milk and cream into a suacepan, bring to a simmer</li>
+                <li>Stir in the sugar and rice</li>
+                <li>Transfer mixture to a shallow ovenproof dish and dot the butter on top. Bake for 30 mins, then stir well and cook for 1 hr more until the pudding is soft and creamy, and a golden skin has formed on top.</li>
+                <li>Once cooked, rest for 10 mins before serving.</li>
+            </ol>
+            <p>The depth and type of dish you use will affect the cooking time, so if the pudding seems too loose, return to the oven and check every 10 mins or so.</p>
+        </details>
+        <details>
+            <summary>Basic Pastry</summary>
+            <p>A basic savoury pastry for quiche, pies etc.</p>
+                <table>
+<tr><td>egg yolk</td><td class='quantity' data-value='1'>1</td><td class='uom'>ea</td><td></td></tr>
+<tr><td>plain flour</td><td class='quantity' data-value='190'>190</td><td class='uom'>g</td><td></td></tr>
+<tr><td>Butter</td><td class='quantity' data-value='110'>110</td><td class='uom'>g</td><td>This should be cold and chopped into chunks</td></tr>
+<tr><td>Water</td><td class='quantity' data-value='4'>4</td><td class='uom'>tsp</td><td>Cold</td></tr>
+                </table>
+            <ol>
+                <li>Rub the butter into the flour to get a breadcrumbs texture.</li>
+                <li>Add the egg yolk and water and bring together, first with a knife and then your hands</li>
+                <li>Chill for a bit before rolling out, then chill again before blind baking.</li>
+            </ol>
+        </details>
+        <details>
+            <summary>Basic Truffles</summary>
+            <p>A basic truffle mix, add alost anything to flavour it.</p>
+                <table>
+<tr><td>Dark Chocolate</td><td class='quantity' data-value='100'>100</td><td class='uom'>g</td><td></td></tr>
+<tr><td>Double Cream</td><td class='quantity' data-value='36'>36</td><td class='uom'>g</td><td></td></tr>
+<tr><td>Unsalted butter</td><td class='quantity' data-value='50'>50</td><td class='uom'>g</td><td></td></tr>
+                </table>
+            <ol>
+                <li>Break chocolate into small pieces in a glass bowl and add the cream</li>
+                <li>Melt over simmering water</li>
+                <li>Chop the butter into small pieces and add it to the mix along with any flavouring</li>
+                <li>Stir until silky and smooth</li>
+                <li>Chill for at least two hours</li>
+                <li>Divide into individual truffles, toss them in vermicelli, cocoa or icing sugar</li>
+                <li>Chill, again preferably overnight</li>
+            </ol>
+        </details>
+        <details>
+            <summary>Blondies</summary>
+            <p>Like brownies but with no chocolate</p>
+                <table>
+<tr><td>butter</td><td class='quantity' data-value='50'>50</td><td class='uom'>g</td><td></td></tr>
+<tr><td>peanut butter soft or crunchy</td><td class='quantity' data-value='200'>200</td><td class='uom'>g</td><td></td></tr>
+<tr><td>vanilla essence</td><td class='quantity' data-value='1'>1</td><td class='uom'>tsp</td><td></td></tr>
+<tr><td>light brown golden sugar</td><td class='quantity' data-value='175'>175</td><td class='uom'>g</td><td></td></tr>
+<tr><td>egg</td><td class='quantity' data-value='1'>1</td><td class='uom'></td><td></td></tr>
+<tr><td>white cooking chocolate (optional)</td><td class='quantity' data-value='75'>75</td><td class='uom'>g</td><td></td></tr>
+<tr><td>sr flour</td><td class='quantity' data-value='125'>125</td><td class='uom'>g</td><td></td></tr>
+                </table>
+            <ol>
+                <li>Beat butter and peanut butter till soft and smooth.</li>
+                <li>Add vanilla essence.</li>
+                <li>Add sugar and egg and mix well.</li>
+                <li>Mix in flour</li>
+                <li>Add milk to a soft consistency</li>
+                <li>Chop up chocolate into small pieces, add to mix and stir well.</li>
+                <li>Butter tin and line.</li>
+                <li>Spread mix evenly in tin.</li>
+                <li>Put in oven for about 25 - 30 minutes at gas mark 4.</li>
+                <li>Cut in the tin into squares and leave to cool, decorate as required and lift out of the tin</li>
+            </ol>
+        </details>
+        <details>
+            <summary>Butter cream</summary>
+            <p>Enough to fill on large sponge cake, scale as needed.</p>
+                <table>
+<tr><td>Butter</td><td class='quantity' data-value='100'>100</td><td class='uom'>g</td><td>Soften the butter first</td></tr>
+<tr><td>icing sugar</td><td class='quantity' data-value='200'>200</td><td class='uom'>g</td><td>Sifted</td></tr>
+<tr><td>Milk</td><td class='quantity' data-value='0'>&nbsp;</td><td class='uom'></td><td>As required</td></tr>
+                </table>
+            <ol>
+                <li>Beat the softened butter until smooth</li>
+                <li>Beat in the icing sugar a little at a time.</li>
+                <li>At this point it will probably be a little too stiff, this is where you add any liquids, vanilla essence, colouring, and then enough milk to make it smooth and the texture you need</li>
+            </ol>
+        </details>
+        <details>
+            <summary>Cheese Scones</summary>
+                <table>
+<tr><td>SR flour</td><td class='quantity' data-value='340'>340</td><td class='uom'>g</td><td></td></tr>
+<tr><td>butter</td><td class='quantity' data-value='83'>83</td><td class='uom'>g</td><td></td></tr>
+<tr><td>grated cheese</td><td class='quantity' data-value='250'>250</td><td class='uom'>g</td><td></td></tr>
+<tr><td>salt</td><td class='quantity' data-value='1'>1</td><td class='uom'>pinch</td><td></td></tr>
+<tr><td>mustard powder</td><td class='quantity' data-value='0.5'>0.5</td><td class='uom'>level tsp</td><td></td></tr>
+                </table>
+            <ol>
+                <li>Add salt and mustard to flour</li>
+                <li>Rub in butter until fine and crumbly</li>
+                <li>Mix in cheese, best by hand</li>
+                <li>Add a little milk until it bind into a dough</li>
+                <li>Roll out and cut</li>
+                <li>Glaze with milk or beaten egg</li>
+                <li>Bake for 15 minutes at gas 7</li>
+            </ol>
+        </details>
+        <details>
+            <summary>Cherry Cake</summary>
+            <p>
+		Scale to the number of eggs you want. For small individual cakes you should get 6 per egg, small cakes will need 20 to 25 minutes at gas 4.
+	</p>
+                <table>
+<tr><td>Glace cherries</td><td class='quantity' data-value='300'>300</td><td class='uom'>g</td><td></td></tr>
+<tr><td>SR four</td><td class='quantity' data-value='200'>200</td><td class='uom'>g</td><td></td></tr>
+<tr><td>Salt</td><td class='quantity' data-value='1'>1</td><td class='uom'>pinch</td><td></td></tr>
+<tr><td>butter</td><td class='quantity' data-value='175'>175</td><td class='uom'>g</td><td>At room temperature</td></tr>
+<tr><td>Caster sugar</td><td class='quantity' data-value='175'>175</td><td class='uom'>g</td><td></td></tr>
+<tr><td>Eggs</td><td class='quantity' data-value='3'>3</td><td class='uom'>ea</td><td></td></tr>
+<tr><td>Ground Almonds</td><td class='quantity' data-value='75'>75</td><td class='uom'>g</td><td>Replace with more flour if you don't have them</td></tr>
+<tr><td>Milk</td><td class='quantity' data-value='75'>75</td><td class='uom'>ml</td><td></td></tr>
+<tr><td>Vanilla extract</td><td class='quantity' data-value='10'>10</td><td class='uom'>ml</td><td></td></tr>
+                </table>
+            <ol>
+                <li>Preheat the oven to gas mark 4</li>
+                <li>Line or grease your loaf tin</li>
+                <li>Halve or quarter the cherries wash and dry, smaller pieces are less prone to sinking</li>
+                <li>Mix everything except the cherries to make your batter</li>
+                <li>Fold in the cherries</li>
+                <li>Bake for 60 to 75 minutes until a skewer comes out clean</li>
+                <li>Leave in the tin for 15 minutes before turning out to cool</li>
+            </ol>
+        </details>
+        <details>
+            <summary>Cherry Cake (for two eggs)</summary>
+            <p>
+		Scale to the number of eggs you want. For small individual cakes you should get 6 per egg, small cakes will need 20 to 25 minutes at gas 4 or 15 minutes in the air fryer at 150C.
+	</p>
+                <table>
+<tr><td>Glace cherries</td><td class='quantity' data-value='200'>200</td><td class='uom'>g</td><td></td></tr>
+<tr><td>SR four</td><td class='quantity' data-value='135'>135</td><td class='uom'>g</td><td></td></tr>
+<tr><td>Salt</td><td class='quantity' data-value='1'>1</td><td class='uom'>small pinch</td><td></td></tr>
+<tr><td>butter</td><td class='quantity' data-value='115'>115</td><td class='uom'>g</td><td>At room temperature</td></tr>
+<tr><td>Caster sugar</td><td class='quantity' data-value='115'>115</td><td class='uom'>g</td><td></td></tr>
+<tr><td>Eggs</td><td class='quantity' data-value='2'>2</td><td class='uom'>ea</td><td></td></tr>
+<tr><td>Ground Almonds</td><td class='quantity' data-value='50'>50</td><td class='uom'>g</td><td>Replace with more flour if you don't have them</td></tr>
+<tr><td>Milk</td><td class='quantity' data-value='50'>50</td><td class='uom'>ml</td><td></td></tr>
+<tr><td>Vanilla extract</td><td class='quantity' data-value='5'>5</td><td class='uom'>ml</td><td></td></tr>
+                </table>
+            <ol>
+                <li>Preheat the oven to gas mark 4</li>
+                <li>Line or grease your loaf tin</li>
+                <li>Halve or quarter the cherries wash and dry, smaller pieces are less prone to sinking</li>
+                <li>Mix everything except the cherries to make your batter</li>
+                <li>Fold in the cherries</li>
+                <li>Bake for 50 to 65 minutes until a skewer comes out clean</li>
+                <li>Leave in the tin for 15 minutes before turning out to cool</li>
+            </ol>
+        </details>
+        <details>
+            <summary>Crumble Topping</summary>
+                <table>
+<tr><td>caster sugar</td><td class='quantity' data-value='100'>100</td><td class='uom'>g</td><td></td></tr>
+<tr><td>butter</td><td class='quantity' data-value='100'>100</td><td class='uom'>g</td><td></td></tr>
+<tr><td>flour</td><td class='quantity' data-value='120'>120</td><td class='uom'>g</td><td></td></tr>
+                </table>
+            <ol>
+                <li>Rub together to a crumbly consistency, don't try to make it too consistent and smooth.</li>
+                <li>Cover fruit without pressing down.</li>
+                <li>Bake 20-30 minutes gas 5</li>
+            </ol>
+        </details>
+        <details>
+            <summary>Egg Custard</summary>
+            <p>This recipe makes a nice sweet egg custard for filling tarts or as a desert in itself.</p>
+                <table>
+<tr><td>Milk</td><td class='quantity' data-value='300'>300</td><td class='uom'>ml</td><td>Full fat will be creamier</td></tr>
+<tr><td>Egg</td><td class='quantity' data-value='2'>2</td><td class='uom'>Probably large, if tiny use three</td><td></td></tr>
+<tr><td>Sugar</td><td class='quantity' data-value='25'>25</td><td class='uom'>g</td><td>Any kind of sugar as it will completely dissolve, brown is interesting</td></tr>
+<tr><td>Vanilla extract</td><td class='quantity' data-value='1'>1</td><td class='uom'>tsp</td><td></td></tr>
+<tr><td>Ground Nutmeg</td><td class='quantity' data-value='1'>1</td><td class='uom'>tsp</td><td></td></tr>
+                </table>
+            <ol>
+                <li>Separate one of the eggs and discard the white.</li>
+                <li>Beat all the cold ingredients together.</li>
+                <li>Split between two ramikins if this is a desert on it's own.</li>
+                <li>Microwave on 30% for 14 minutes until set.</li>
+                <li>Allow to cool and then refrigerate for at least two hours.</li>
+            </ol>
+            <p></p>
+        </details>
+        <details>
+            <summary>Flapjacks</summary>
+                <table>
+<tr><td>Light brown sugar</td><td class='quantity' data-value='125'>125</td><td class='uom'>g</td><td></td></tr>
+<tr><td>butter</td><td class='quantity' data-value='125'>125</td><td class='uom'>g</td><td></td></tr>
+<tr><td>Porridge oats</td><td class='quantity' data-value='250'>250</td><td class='uom'>g</td><td></td></tr>
+<tr><td>Golden syrup</td><td class='quantity' data-value='95'>95</td><td class='uom'>g</td><td></td></tr>
+                </table>
+            <ol>
+                <li>Process oats to break them down a little, don't try to turn them into a flour you want to retain some oaty texture.</li>
+                <li>Thoroughly mix the oats and sugar in a bowl.</li>
+                <li>Melt the butter and syrup together in a pan, not too hot, just enough to melt the butter.</li>
+                <li>Add the melted butter and syrup to the bowl and mix well.</li>
+                <li>Press into a baking tray and score into squares.</li>
+                <li>Bake for about 15 minutes at gas 6.</li>
+            </ol>
+        </details>
+        <details>
+            <summary>Flapjacks Nutty</summary>
+                <table>
+<tr><td>Light brown sugar</td><td class='quantity' data-value='125'>125</td><td class='uom'>g</td><td></td></tr>
+<tr><td>butter</td><td class='quantity' data-value='115'>115</td><td class='uom'>g</td><td></td></tr>
+<tr><td>Porridge oats</td><td class='quantity' data-value='140'>140</td><td class='uom'>g</td><td></td></tr>
+<tr><td>Cornflakes</td><td class='quantity' data-value='110'>110</td><td class='uom'>g</td><td></td></tr>
+<tr><td>Golden syrup</td><td class='quantity' data-value='80'>80</td><td class='uom'>g</td><td></td></tr>
+                </table>
+            <ol>
+                <li>Process oats to break them down a little, don't try to turn them into a flour you want to retain some oaty texture.</li>
+                <li>Put the corflakes in a bowl and break them up a little to make small cornflakes.</li>
+                <li>Thoroughly mix the oats, cornflakes and sugar in a bowl.</li>
+                <li>Melt the butter and syrup together in a pan, not too hot, just enough to melt the butter.</li>
+                <li>Add the melted butter and syrup to the bowl and mix well.</li>
+                <li>Press really firmly into a baking tray finishing with the back of a spoon.</li>
+                <li>Bake for about 15 minutes at gas 5.</li>
+                <li>Don't forget to score them while still hot, Once cold it'll be like cutting glass.</li>
+            </ol>
+        </details>
+        <details>
+            <summary>Fritata</summary>
+            <p>A kind of caseless quiche cooked in a frying pan. Like a quiche the fillings can be pretty much 
+		anything although the peas and potatoes are traditional ingedients. Fillings should all be cooked before 
+		the eggs are added. Quantites should work in a medium sized pan and serve three or four. Note you need an
+		oven proof frying pan for this.</p>
+                <table>
+<tr><td>Eggs</td><td class='quantity' data-value='6'>6</td><td class='uom'>ea</td><td></td></tr>
+<tr><td>Cream</td><td class='quantity' data-value='150'>150</td><td class='uom'>ml</td><td></td></tr>
+<tr><td>Grated Cheese</td><td class='quantity' data-value='0'>&nbsp;</td><td class='uom'></td><td>Strong cheddar is good but whatever works for you.</td></tr>
+<tr><td>Potatoes</td><td class='quantity' data-value='500'>500</td><td class='uom'>g</td><td></td></tr>
+<tr><td>Peas</td><td class='quantity' data-value='0'>&nbsp;</td><td class='uom'></td><td>optional</td></tr>
+<tr><td>Bacon</td><td class='quantity' data-value='0'>&nbsp;</td><td class='uom'></td><td>optional</td></tr>
+<tr><td>Sausages</td><td class='quantity' data-value='0'>&nbsp;</td><td class='uom'></td><td>optional</td></tr>
+<tr><td>Mushrooms</td><td class='quantity' data-value='0'>&nbsp;</td><td class='uom'></td><td>optional</td></tr>
+<tr><td>Milk</td><td class='quantity' data-value='0'>&nbsp;</td><td class='uom'></td><td>As required</td></tr>
+                </table>
+            <ol>
+                <li>Peel the potatoes and cut into half inch cubes.</li>
+                <li>Other than the eggs cream and cheese everything needs to be cooked before the eggs are added so boil/steam 
+		the potatoes and peas, bacon veg etc. can be precooked or sauted in the pan before adding the eggs.</li>
+                <li>At about this point you should be putting the oven on at Gas 4, you don't wnat to put the pan into a cold oven.</li>
+                <li>Add everything except the cheese, eggs and cream to the hot pan, anything that needs cooking should go in first, fragile things (like peas) last.</li>
+                <li>While everything is still hot distribute the cooked meats and some chopped or grated cheese in the pan.</li>
+                <li>Beat the cream and eggs together and pour into the hot pan.</li>
+                <li>Heat on the hob until starting to cook round the edges then the pan goes into the preheated (Gas 4) oven.</li>
+                <li>Cook for about thirty minutes then turn over onto a plate slice and serve. DO NOT FORGET THE PAN HANDLE IS HOT!!!</li>
+            </ol>
+        </details>
+        <details>
+            <summary>Fruit Cake</summary>
+                <table>
+<tr><td>sr flour</td><td class='quantity' data-value='225'>225</td><td class='uom'>g</td><td></td></tr>
+<tr><td>butter</td><td class='quantity' data-value='110'>110</td><td class='uom'>g</td><td></td></tr>
+<tr><td>Caster sugar</td><td class='quantity' data-value='110'>110</td><td class='uom'>g</td><td></td></tr>
+<tr><td>eggs</td><td class='quantity' data-value='1'>1</td><td class='uom'></td><td></td></tr>
+<tr><td>Milk</td><td class='quantity' data-value='0'>&nbsp;</td><td class='uom'></td><td></td></tr>
+<tr><td>dried fruit</td><td class='quantity' data-value='225'>225</td><td class='uom'>g</td><td></td></tr>
+<tr><td>Mixed spice</td><td class='quantity' data-value='1'>1</td><td class='uom'>tsp</td><td></td></tr>
+                </table>
+            <ol>
+                <li>Blend flour and butter to breadcrumbs.</li>
+                <li>Add sugar and spice.</li>
+                <li>Add the egg and enough milk for a firm dropping consistency.</li>
+                <li>Fold the fruit into mixture.</li>
+                <li>Put in a lined tin and Bake at gas 4 for 45mins to an hour.</li>
+            </ol>
+        </details>
+        <details>
+            <summary>Hot chocalate</summary>
+            <p>
+		Hot chocalate made from a bar, make it in a jug, if you try to do it in a mug you'll spill it.
+	</p>
+                <table>
+<tr><td>Cadburys Dairy milk</td><td class='quantity' data-value='25'>25</td><td class='uom'>g</td><td></td></tr>
+<tr><td>Semi Skimmed Milk</td><td class='quantity' data-value='240'>240</td><td class='uom'>g</td><td></td></tr>
+                </table>
+            <ol>
+                <li>Weigh the stuff into a jug, one that will only be half full.</li>
+                <li>Microwave on full for 2 min 40 sec</li>
+                <li>Blend it and then froth it with a milk frother.</li>
+            </ol>
+            <p>For two mugs double the weights and microwave for five minutes.</p>
+        </details>
+        <details>
+            <summary>Jacket Potatoes</summary>
+            <p>Potatoes - For best results big but not too big.</p>
+            <p>Oil and salt for rubbing.</p>
+            <ol>
+                <li>Preheat the oven to gas 7.</li>
+                <li>Thoroughly clean the potatoes.</li>
+                <li>Rub the skins in the salt and oil.</li>
+                <li>Put the potatoes in the oven either directly on the shelf or on a perforated sheet.</li>
+                <li>After twenty minutes turn down to mark 5.</li>
+                <li>After reducing the heat expect them to take around an hour but test with a fork or skewer.</li>
+                <li>You can turn them once or twice dering cooking but it's not essential.</li>
+            </ol>
+        </details>
+        <details>
+            <summary>Lasagne with Chorizo</summary>
+            <p>Lightly spiced lasagne bolognaise with home made pasta.</p>
+                <table>
+<tr><td>eggs</td><td class='quantity' data-value='5'>5</td><td class='uom'>ea</td><td></td></tr>
+<tr><td>00 flour</td><td class='quantity' data-value='0'>&nbsp;</td><td class='uom'></td><td>As much as needed for the eggs</td></tr>
+<tr><td>finely minced beef</td><td class='quantity' data-value='500'>500</td><td class='uom'>g</td><td></td></tr>
+<tr><td>Passata</td><td class='quantity' data-value='500'>500</td><td class='uom'>g</td><td></td></tr>
+<tr><td>Chorizo sausage</td><td class='quantity' data-value='2'>2</td><td class='uom'></td><td>2 Med size sausages but to taste</td></tr>
+<tr><td>Grated cheese</td><td class='quantity' data-value='0'>&nbsp;</td><td class='uom'></td><td>For topping</td></tr>
+                </table>
+            <ol>
+                <li>Mix flour into the eggs until a soft dough is formed. This needs to be refrigerated for at least an hour.</li>
+                <li>Brown the mince.</li>
+                <li>Chop the sausages into small pieces, similar to the minced beef pieces.</li>
+                <li>Fry the chorizo until well browned.</li>
+                <li>Add a little water to the pan and boil to incorporate all the chorizo residue.</li>
+                <li>Mix water, chorizo, beef and passata but keep a little passata back.</li>
+                <li>Assemble the lasagne with a thin smear of neat passata then pasta rolled out really thin, meat mixture, pasta, meat mixture, pasta and top with the last of the passata followed by a gernerous covering of cheese.</li>
+                <li>Bake in the oven gas 4 for forty minutes or so until well browned.</li>
+            </ol>
+            <p>Should provide three generous portions.</p>
+            <p>Shop bought pasta is fine if you prefer.</p>
+        </details>
+        <details>
+            <summary>Minestrone Soup</summary>
+                <table>
+<tr><td>Carrot</td><td class='quantity' data-value='0'>&nbsp;</td><td class='uom'></td><td></td></tr>
+<tr><td>Onion</td><td class='quantity' data-value='0'>&nbsp;</td><td class='uom'></td><td></td></tr>
+<tr><td>Potato</td><td class='quantity' data-value='0'>&nbsp;</td><td class='uom'></td><td></td></tr>
+<tr><td>Chicken Stock</td><td class='quantity' data-value='0'>&nbsp;</td><td class='uom'></td><td></td></tr>
+<tr><td>Small pasta pieces</td><td class='quantity' data-value='0'>&nbsp;</td><td class='uom'></td><td>Orzo or other small pasta will be fine</td></tr>
+<tr><td>Garlick puree</td><td class='quantity' data-value='0'>&nbsp;</td><td class='uom'></td><td></td></tr>
+                </table>
+            <ol>
+                <li>Chop the veg to a size that works for you but that should be pretty fine. Especially for the onion.</li>
+                <li>fry the veg until it softens somewhat in a little oil with the Garlick.</li>
+                <li>Add the pasta and veg to the boiling stock and simmer until everything including the pasta is tender.</li>
+            </ol>
+            <p>There are no quantities in this recipe yet but a little of everything is what works with enough stock to make it into quite a thick soup.</p>
+        </details>
+        <details>
+            <summary>Onion rings</summary>
+            <p>The batter can be used to fritter anything really but works great with onion rings.</p>
+                <table>
+<tr><td>Onion</td><td class='quantity' data-value='1'>1</td><td class='uom'>ea</td><td>It's girth you want to make nice big rings</td></tr>
+<tr><td>SR flour</td><td class='quantity' data-value='150'>150</td><td class='uom'>g</td><td></td></tr>
+<tr><td>Sparkling water</td><td class='quantity' data-value='180'>180</td><td class='uom'>g</td><td></td></tr>
+                </table>
+            <ol>
+                <li>whisk the water and flour together, this will make quite a thick batter.</li>
+                <li>Slice the middle part of the onion into 10mm deep discs and separate into rings.</li>
+                <li>Dip the rings in the batter and allow excess to drain for a few seconds.</li>
+                <li>Drop into oil at 170 C for 2.5 minutes.</li>
+                <li>Floating rings (they should float) can be flipped over with a minute to go.</li>
+            </ol>
+            <p>Don't try to cook too many at once, you are after quality not quantity.</p>
+        </details>
+        <details>
+            <summary>Pan Fried Mackeral</summary>
+            <p>Delightful light moist fish.</p>
+                <table>
+<tr><td>Mackeral Fillets, skin on.</td><td class='quantity' data-value='0'>&nbsp;</td><td class='uom'></td><td>One per person as a starter, maybe two for a generous main.</td></tr>
+                </table>
+            <ol>
+                <li>Get your frying pan really hot.</li>
+                <li>Add a little oil to the pan.</li>
+                <li>Place the mackeral in the pan skin side down and immediately drop to a gentle heat.</li>
+                <li>Fry for 10 minutes - don't touch!</li>
+                <li>Turn carefully and fry for a further five minutes.</li>
+                <li>Plate up and rest for a minute or two.</li>
+            </ol>
+        </details>
+        <details>
+            <summary>Pancakes</summary>
+            <p>Makes about a portion or five small pancakes, scale as required.</p>
+                <table>
+<tr><td>Plain Flour</td><td class='quantity' data-value='50'>50</td><td class='uom'>g</td><td></td></tr>
+<tr><td>Eggs</td><td class='quantity' data-value='1'>1</td><td class='uom'>ea</td><td></td></tr>
+<tr><td>Milk</td><td class='quantity' data-value='100'>100</td><td class='uom'>ml</td><td></td></tr>
+                </table>
+            <ol>
+                <li>Beat the ingredients together until you have a smooth thin batter.</li>
+                <li>Heat your pan to a high heat with just a trace of oil.</li>
+                <li>Add just enough batter to spread over the bottom of the pan by rocking the pan around.</li>
+                <li>Fry for a short time turning once, the pancake should be lightly golden on both sides in about a minute.</li>
+            </ol>
+            <p>Serve however you want; rolled, stacked stuffed; with lemon juice and sugar, marmalade, syrup etc...</p>
+        </details>
+        <details>
+            <summary>Peanut Butter Squares</summary>
+            <p>Millionaires shortbread but with peanut butter and no cooking.</p>
+                <table>
+<tr><td>Butter</td><td class='quantity' data-value='150'>150</td><td class='uom'>g</td><td></td></tr>
+<tr><td>Peanut Butter</td><td class='quantity' data-value='300'>300</td><td class='uom'>g</td><td>Smooth works but crunchy is more interesting</td></tr>
+<tr><td>Chocolate</td><td class='quantity' data-value='200'>200</td><td class='uom'>g</td><td>Dark or milk to taste</td></tr>
+<tr><td>Digestive biscuits</td><td class='quantity' data-value='250'>250</td><td class='uom'>g</td><td></td></tr>
+<tr><td>Soft light brown sugar</td><td class='quantity' data-value='200'>200</td><td class='uom'>g</td><td></td></tr>
+<tr><td>Vanilla extract</td><td class='quantity' data-value='1'>1</td><td class='uom'>tsp</td><td></td></tr>
+                </table>
+            <ol>
+                <li>Line tin with baking parchment leaving some excess paper hanging over the edges (this makes it easier to lift out once set).</li>
+                <li>Put the butter in a large pan and leave to melt slowly on a low heat.</li>
+                <li>Melt the chocalate</li>
+                <li>Remove the butter from the heat once melted.</li>
+                <li>Blitz the digestive biscuits and brown sugar in a blender or food processor to give fine crumbs. Tip them into the butter, scoop in the peanut butter and vanilla extract and mix well together, so everything is combined.</li>
+                <li>Tip the mixture into the lined tin and press it down hard with the back of a spoon. It needs to be really compact and tight. Then pour over the melted chocolate tilting the tin back and forth a bit so that the whole thing is evenly covered. Pop in the freezer for 30 minutes to firm up (or the fridge for 1 hour).</li>
+                <li>Once the chocolate has set, remove it from the freezer (or fridge). Lift it out of the tin with the help of the baking parchment. Remove the paper and then use a sharp knife to divide it into 16 squares to serve. These will last a few days in an airtight container.</li>
+            </ol>
+            <p>
+		Will keep for a few days in an airtight container.
+		</p>
+        </details>
+        <details>
+            <summary>Quiche</summary>
+            <p>The recipe includes suggestions for the filling but anything which will not mix with the eggs can be used.</p>
+                <table>
+<tr><td>Short crust pastry</td><td class='quantity' data-value='250'>250</td><td class='uom'>g</td><td></td></tr>
+<tr><td>eggs</td><td class='quantity' data-value='4'>4</td><td class='uom'>ea</td><td>Depending on size</td></tr>
+<tr><td>Bacon</td><td class='quantity' data-value='0'>&nbsp;</td><td class='uom'></td><td>optional</td></tr>
+<tr><td>Sausages</td><td class='quantity' data-value='0'>&nbsp;</td><td class='uom'></td><td>optional</td></tr>
+<tr><td>Cheese</td><td class='quantity' data-value='0'>&nbsp;</td><td class='uom'></td><td>optional</td></tr>
+<tr><td>Mushrooms</td><td class='quantity' data-value='0'>&nbsp;</td><td class='uom'></td><td>optional</td></tr>
+<tr><td>Cream</td><td class='quantity' data-value='150'>150</td><td class='uom'>ml</td><td>Optional</td></tr>
+<tr><td>Milk</td><td class='quantity' data-value='0'>&nbsp;</td><td class='uom'></td><td>As required</td></tr>
+                </table>
+            <ol>
+                <li>Roll out pastry and shape into lightly greased flan tin, prick the bottom of the case with a fork.</li>
+                <li>Leave case in Fridge for at least 1 hour.</li>
+                <li>Blind the case with beans and bake for 10 to 20 minutes Gas 6.</li>
+                <li>Remove the blinding and return to oven for five minutes.</li>
+                <li>Beat the eggs and brush the inside of the case.</li>
+                <li>Back in the oven for another five minutes.</li>
+                <li>Chop and cook some combination of bacon sausages and mushrooms to taste.</li>
+                <li>Make the custard by adding an equal volume of milk to the eggs and beating together, replace some of the milk with the cream for a richer custard.</li>
+                <li>Distribute the cooked meats and some chopped or grated cheese in the case.</li>
+                <li>Add the cream and then full fat milk to the same weight as the eggs.</li>
+                <li>Beat the custard and then pour over the ingredients in the case.</li>
+                <li>Back into the oven at Gas 3 until set and slightly browned on top, about 40 minutes.</li>
+            </ol>
+        </details>
+        <details>
+            <summary>Rice (Absorption method)</summary>
+            <p>This is how you cook white rice by the absorption method.</p>
+                <table>
+<tr><td>Dried rice</td><td class='quantity' data-value='75'>75</td><td class='uom'>g</td><td>per person</td></tr>
+<tr><td>Water</td><td class='quantity' data-value='0'>&nbsp;</td><td class='uom'></td><td>Twice the rice by volume</td></tr>
+                </table>
+            <ol>
+                <li>Wash the rice thoroughy in a sieve under the cold tap.</li>
+                <li>Put the rice and water in a saucepan and bring to a good strong boil.</li>
+                <li>As soon as the rice is boiling well give it one quick stir and turn the gas down low, put on a tight fitting lid and leave well alone for 10 minutes exactly.</li>
+                <li>Once the ten minutes has elapsed turn the heat off, leave well alone for a further five minutes.</li>
+                <li>Serve!</li>
+            </ol>
+        </details>
+        <details>
+            <summary>Risotto base</summary>
+            <p>This recipe is for the base add peas, chicken, mushrooms etc. etc... About enough for 2 or 3.</p>
+            <p>If you want to do this in a slow cooker use 150g rice to 600g stock and cook on high, it should take about an hour and a half.</p>
+                <table>
+<tr><td>Onions</td><td class='quantity' data-value='0'>&nbsp;</td><td class='uom'></td><td>A single onion is great or a few shallots</td></tr>
+<tr><td>Risotto rice</td><td class='quantity' data-value='170'>170</td><td class='uom'>g</td><td></td></tr>
+<tr><td>Chicken stock</td><td class='quantity' data-value='1000'>1000</td><td class='uom'>ml</td><td>Vegetable stock if you want a veggie version</td></tr>
+<tr><td>Butter</td><td class='quantity' data-value='0'>&nbsp;</td><td class='uom'></td><td>A couple of knobs</td></tr>
+<tr><td>Oil</td><td class='quantity' data-value='0'>&nbsp;</td><td class='uom'></td><td></td></tr>
+<tr><td>Finely grated cheese</td><td class='quantity' data-value='0'>&nbsp;</td><td class='uom'></td><td>To finish</td></tr>
+                </table>
+            <ol>
+                <li>Prepare the stock and bring it to the boil then leave the pan on a very low heat.</li>
+                <li>Finely chop the onions.</li>
+                <li>Melt the first knob of butter in a saucepan with a splash of oil and add the onions.</li>
+                <li>Add the rice and continue to fry, the rice should "crack" but do not allow it to burn.</li>
+                <li>Now add the wine, it should boil but will cool the pan.</li>
+                <li>Now patience is required, keep gently on the simmer, watch it like a hawk and stir very often. Keep adding the stock a ladel at a time each time it is absorbed.</li>
+                <li>Keep stirring, adding and watching until it's ready. This is when it is smooth and creamy and the rice is soft. It shouldn't have gone all to mush.</li>
+                <li>Add the second knob of butter and stir, as soon as this has been incorporated it's ready to serve.</li>
+                <li>Serve and scatter the cheese on top, for the purist this will be parmesan.</li>
+            </ol>
+            <p>
+		Along the way you will also have to add any other ingeredients, unless they require very little cooking it is best to cook them first.
+		</p>
+        </details>
+        <details>
+            <summary>Roast Chicken</summary>
+            <ol>
+                <li>Roast at Gas mark 5 for 40 minutes a kilo plus 40 minutes.</li>
+                <li>Cover with foil is good, remove foil with half an hour to go.</li>
+                <li>Cheap Streaky bacon under the foil is even better.</li>
+            </ol>
+        </details>
+        <details>
+            <summary>Roast Chicken Breast</summary>
+                <table>
+<tr><td>Chicken Breast</td><td class='quantity' data-value='2'>2</td><td class='uom'>Each</td><td>Med size breasts</td></tr>
+<tr><td>Smoked paprika</td><td class='quantity' data-value='0.5'>0.5</td><td class='uom'>Teaspoon</td><td>Unsmoked is fine if you prefer</td></tr>
+<tr><td>Soft brown sugar</td><td class='quantity' data-value='2'>2</td><td class='uom'>teaspoon</td><td></td></tr>
+<tr><td>Salt and pepper</td><td class='quantity' data-value='0'>&nbsp;</td><td class='uom'></td><td></td></tr>
+                </table>
+            <ol>
+                <li>Preheat the oven to gas 7.</li>
+                <li>Mix the sugar and paprika and season with salt and pepper to taste.</li>
+                <li>Rub the chicken breasts all over with the seasoning.</li>
+                <li>Roast for 20 minutes, tweak the time a bit depending on thickness of breasts.</li>
+                <li>Finish the breasts under a hot grill for a minute or two a side.</li>
+                <li>Slice the breasts at an angle so they present like a traditional roast dinner.</li>
+            </ol>
+        </details>
+        <details>
+            <summary>Roast Pork</summary>
+            <p>For a Loin Joint</p>
+            <ol>
+                <li>35 mins per 500g plus 35 mins at Gas 5. Pork has a high enough fat content so that it does not usually require basting.</li>
+            </ol>
+        </details>
+        <details>
+            <summary>Roast Potatoes</summary>
+                <table>
+<tr><td>Plain flour</td><td class='quantity' data-value='1'>1</td><td class='uom'>Little</td><td></td></tr>
+<tr><td>Potatoes</td><td class='quantity' data-value='0'>&nbsp;</td><td class='uom'></td><td>As required</td></tr>
+<tr><td>Oil / Fat</td><td class='quantity' data-value='0'>&nbsp;</td><td class='uom'></td><td>Whatever your taste</td></tr>
+                </table>
+            <ol>
+                <li>Put a roasting tin in the oven (one big enough to take the potatoes in a single layer) and heat oven to gas 7.</li>
+                <li>Peel the potatoes and cut each into 4 even-sized pieces if they are medium size, 2-3 if smaller (5cm pieces). </li>
+                <li>Drop the potatoes into a large pan and pour in enough water to barely cover them. Add salt, then wait for the water to boil. As soon as the water reaches a full rolling boil, lower the heat, put your timer on and simmer the potatoes uncovered, reasonably vigorously, for 5 mins.</li>
+                <li>Meanwhile, put your choice of fat into the hot roasting tin and heat it in the oven for a few minutes, so it is really hot.</li>
+                <li>Drain the potatoes in a colander. Now it is time to rough them up a bit, shake the colander back and forth a few times to fluff up the outsides. Sprinkle with the flour, and give another shake or two so they are evenly and thinly coated.</li>
+                <li>Carefully put the potatoes into the hot fat, they will sizzle as they go in, then turn and roll them around so they are coated all over. Spread them in a single layer making sure they have plenty of room.</li>
+                <li>Roast the potatoes for 15 mins, then take them out of the oven and turn them over. Roast for another 15 mins and turn them over again. Put them back in the oven for another 10-20 mins, or however long it takes to get them really golden and crisp. The colouring will be uneven, which is what you want. Scatter with salt and serve straight away.</li>
+            </ol>
+            <p>Roasting time varies with variety and age but don't cut it fine, budget for about 75 minutes.</p>
+        </details>
+        <details>
+            <summary>Rock Cakes</summary>
+            <p>Simplest possible cakes!</p>
+                <table>
+<tr><td>Self raising flour</td><td class='quantity' data-value='225'>225</td><td class='uom'>g</td><td></td></tr>
+<tr><td>Caster sugar</td><td class='quantity' data-value='75'>75</td><td class='uom'>g</td><td></td></tr>
+<tr><td>Baking powder</td><td class='quantity' data-value='1'>1</td><td class='uom'>tsp</td><td></td></tr>
+<tr><td>Butter</td><td class='quantity' data-value='125'>125</td><td class='uom'>g</td><td></td></tr>
+<tr><td>Dried fruit</td><td class='quantity' data-value='150'>150</td><td class='uom'>g</td><td></td></tr>
+<tr><td>Egg</td><td class='quantity' data-value='1'>1</td><td class='uom'></td><td></td></tr>
+<tr><td>Milk</td><td class='quantity' data-value='1'>1</td><td class='uom'>tbsp</td><td></td></tr>
+<tr><td>Vanilla extract</td><td class='quantity' data-value='2'>2</td><td class='uom'>tsp</td><td></td></tr>
+                </table>
+            <ol>
+                <li>Mix flour, sugar and baking powder in a bowl.</li>
+                <li>Cut butter into pieces and rub into mix to a breadcrumb consistency.</li>
+                <li>Mix in the dried fruit.</li>
+                <li>In a new bowl beat together the egg, milk and vanilla.</li>
+                <li>Add the egg mixture to the main bowl and mix with a spoon. It should just come together but still be lumpy.</li>
+                <li>Put dollops onto a parchment lined baking sheet, this quantity makes 6 to 9.</li>
+                <li>Bake in preheated oven gas 4 for 20-30 minutes.</li>
+            </ol>
+        </details>
+        <details>
+            <summary>Rum and Raisin Pannacotta</summary>
+            <p>Panacotta base here with christmas spices, rum and raisins. Really tastes of christmas pud.</p>
+                <table>
+<tr><td>Double cream</td><td class='quantity' data-value='300'>300</td><td class='uom'>g</td><td></td></tr>
+<tr><td>Full fat milk</td><td class='quantity' data-value='200'>200</td><td class='uom'>g</td><td></td></tr>
+<tr><td>Raisins</td><td class='quantity' data-value='0'>&nbsp;</td><td class='uom'></td><td></td></tr>
+<tr><td>Mixed spice</td><td class='quantity' data-value='0.5'>0.5</td><td class='uom'>tsp</td><td></td></tr>
+<tr><td>Cinammon</td><td class='quantity' data-value='0.5'>0.5</td><td class='uom'>tsp</td><td></td></tr>
+<tr><td>Dark Rum</td><td class='quantity' data-value='0'>&nbsp;</td><td class='uom'></td><td></td></tr>
+<tr><td>Gelatin</td><td class='quantity' data-value='0'>&nbsp;</td><td class='uom'></td><td>Enough to set a pint or so</td></tr>
+                </table>
+            <ol>
+                <li>Pour enough rum to cover over the fruit, leave to soak up the liquid for a couple of hours or overnight.</li>
+                <li>Dissolve the gelatin in 100ml of water in accordance with the instructions.</li>
+                <li>Put the milk and cream on the heat and bring to boiling point.</li>
+                <li>Add the spices and stir well, take off the heat.</li>
+                <li>Add the gelatin and fruit; stir well.</li>
+                <li>Pour into ramikins, the fruit will all be at the bottom, just share it out at the end.</li>
+                <li>Leave to set overnight in the fridge.</li>
+            </ol>
+        </details>
+        <details>
+            <summary>Scones</summary>
+                <table>
+<tr><td>SR flour</td><td class='quantity' data-value='350'>350</td><td class='uom'>g</td><td></td></tr>
+<tr><td>Baking powder</td><td class='quantity' data-value='1'>1</td><td class='uom'>teaspoon</td><td></td></tr>
+<tr><td>Butter</td><td class='quantity' data-value='85'>85</td><td class='uom'>g</td><td></td></tr>
+<tr><td>Caster sugar</td><td class='quantity' data-value='42'>42</td><td class='uom'>g</td><td></td></tr>
+<tr><td>Salt</td><td class='quantity' data-value='0.25'>0.25</td><td class='uom'>teaspoon</td><td></td></tr>
+<tr><td>Milk</td><td class='quantity' data-value='175'>175</td><td class='uom'>ml</td><td></td></tr>
+<tr><td>Vanilla extract</td><td class='quantity' data-value='1'>1</td><td class='uom'>teaspoon</td><td></td></tr>
+<tr><td>Lemon juice</td><td class='quantity' data-value='1'>1</td><td class='uom'>teaspoon</td><td></td></tr>
+                </table>
+            <ol>
+                <li>Preheat the oven to gas 7.</li>
+                <li>Mix flour and baking powder in a large bowl.</li>
+                <li>Rub in butter until fine and crumbly.</li>
+                <li>Stir in the sugar.</li>
+                <li>Heat the milk in the microwave for 30 seconds to make it slightly warm.</li>
+                <li>Add the lemon juice and vanilla to the milk.</li>
+                <li>Put your baking sheet in the oven.</li>
+                <li>Make a well in the dry mixture and pour in all the liquid.</li>
+                <li>Combine the mix quickly with a table knife.</li>
+                <li>Scatter some flour onto the work surface and turn out the dough, fold the dough over two or three times, do not knead it.</li>
+                <li>Pat the dough into a round (don't roll it) and then cut out your scones say 5cm across and 2 or 3 deep as you wish.</li>
+                <li>You can gently recombine the offcuts and cut a few more.</li>
+                <li>Glaze with milk or beaten egg.</li>
+                <li>Bake for 10 minutes at gas 7.</li>
+            </ol>
+        </details>
+        <details>
+            <summary>Slow cooker beef joint</summary>
+            <p>This is not about a one pot meal but is about a perfect joint. Serve with whatever additional veg you want.</p>
+                <table>
+<tr><td>beef joint</td><td class='quantity' data-value='650'>650</td><td class='uom'>g</td><td>Topside is probably the best inexpensive joint for this recipe. Brisket is nice but won't slice well, don't be tempted to try it.</td></tr>
+<tr><td>Onion</td><td class='quantity' data-value='1'>1</td><td class='uom'></td><td>A medium sized onion, you don't need a big one.</td></tr>
+<tr><td>beef stock</td><td class='quantity' data-value='500'>500</td><td class='uom'>ml</td><td></td></tr>
+<tr><td>Red wine</td><td class='quantity' data-value='1'>1</td><td class='uom'></td><td></td></tr>
+<tr><td>Corn flour</td><td class='quantity' data-value='6'>6</td><td class='uom'>dstsp</td><td></td></tr>
+                </table>
+            <ol>
+                <li>Roughly chop the carrots slice the onions and drop into the slow cooker.</li>
+                <li>Thoroughly sear the joint all over to develop the flavour.</li>
+                <li>Add the joint to the slow cooker.</li>
+                <li>Mix the stock and red wine, slake and then add 3 tbsp of the corn flour.</li>
+                <li>Pour the stock over the joint, it doesn't need to be completely covered but should be mostly covered.</li>
+                <li>Cook on low until the centre reaches 50C for rare or 70 for well done, this should take 3 to 5 hours for a good sized joint 90-120 minutes for a very small one.</li>
+                <li>Take the beef out and wrap in foil to rest.</li>
+                <li>While the beef is resting transfer most of the liquid to a saucepan, reduce and thicken with remaining cornflour.</li>
+                <li>Serve with roasties, yorkshires and veg.</li>
+            </ol>
+            <p>
+			This is a great way to get a small joint well done without drying it out.
+		</p>
+        </details>
+        <details>
+            <summary>Slow cooker beef stew</summary>
+            <p>This recipe does not need to be precise you can adjust the quantities if you like, a lot of it is about 
+		what you feel like and what you have/can get. Add any other veg you fancy.</p>
+                <table>
+<tr><td>diced beef</td><td class='quantity' data-value='400'>400</td><td class='uom'>g</td><td>Either buy it diced or dice it yourself, cheaper cuts are fine</td></tr>
+<tr><td>Dried Onion</td><td class='quantity' data-value='1'>1</td><td class='uom'>Small handful</td><td></td></tr>
+<tr><td>Rich Beef stock</td><td class='quantity' data-value='500'>500</td><td class='uom'>ml</td><td></td></tr>
+<tr><td>Red wine</td><td class='quantity' data-value='1'>1</td><td class='uom'>miniature bottle</td><td></td></tr>
+<tr><td>Corn flour</td><td class='quantity' data-value='2'>2</td><td class='uom'>rounded desert spoon</td><td></td></tr>
+<tr><td>Potatoes</td><td class='quantity' data-value='600'>600</td><td class='uom'>g</td><td></td></tr>
+<tr><td>Carrots</td><td class='quantity' data-value='250'>250</td><td class='uom'>g</td><td></td></tr>
+                </table>
+            <ol>
+                <li>Peel and chop the root veg into the sizes you like, carrots smaller potatoes bigger.</li>
+                <li>Put the stock, root veg and onions into the slow cooker.</li>
+                <li>Thoroughly sear the beef all over in a very hot pan to develop the flavour.</li>
+                <li>Add the beef to the slow cooker.</li>
+                <li>Deglaze the pan with the red wine and add this to the slow cooker.</li>
+                <li>Cook on low for ten hours.</li>
+                <li>45 minutes before serving slake the cornflour with water then mix with a little of the liquid in the cooker.</li>
+                <li>Add the cornflour mix to the cooker and give the stew a good stir.</li>
+                <li>If you have any fragile veg to add such as peas or butter beans add them at the same time as the cornflour.</li>
+            </ol>
+            <p>
+			Classic beef stew, it only gets better the longer you cook it!
+		</p>
+        </details>
+        <details>
+            <summary>Slow cooker Chicken</summary>
+            <p>This is a way to cook a (small) whole chicken in the slow cooker, you can use the result just like a roast 
+		chicken but it will be more moist and tender. Bear in mind if you are one who likes to eat the skin it'll be very pale and bland.</p>
+                <table>
+<tr><td>Chicken</td><td class='quantity' data-value='1'>1</td><td class='uom'>ea</td><td>A whole chicken of a size to fit comfortably in your slow cooker</td></tr>
+<tr><td>Onion</td><td class='quantity' data-value='1'>1</td><td class='uom'></td><td>A medium sized onion, you don't need a big one.</td></tr>
+                </table>
+            <ol>
+                <li>Slice the onion into rings and jumble them into the slow cooker.</li>
+                <li>Put the chicken on top and add 100ml or so of water</li>
+                <li>Cook on low until done, experience says 4 hours but the interior should reach 70C juices run clear and so on.</li>
+                <li>Discard the onions and use the stock to make gravy if you wish.</li>
+            </ol>
+            <p>
+			The onions are as much to make a space for the water under the bird as anything but they do seem to add a little flavour.
+		</p>
+        </details>
+        <details>
+            <summary>Slow Cooker Macaroni Pudding</summary>
+            <p>Replace 150g of the milk with cream if you want a richer pudding.</p>
+                <table>
+<tr><td>Macroni</td><td class='quantity' data-value='105'>105</td><td class='uom'>g</td><td></td></tr>
+<tr><td>Milk</td><td class='quantity' data-value='650'>650</td><td class='uom'>g</td><td></td></tr>
+<tr><td>Caster Sugar</td><td class='quantity' data-value='40'>40</td><td class='uom'>g</td><td></td></tr>
+<tr><td>Vanilla flavouring</td><td class='quantity' data-value='1'>1</td><td class='uom'>tsp</td><td></td></tr>
+<tr><td>Corn flour</td><td class='quantity' data-value='1'>1</td><td class='uom'>tsp</td><td></td></tr>
+                </table>
+            <ol>
+                <li>Butter the slow cooker</li>
+                <li>Mix all the liquids and the sugar together and stir until the sugar is dissolved</li>
+                <li>Slake the corn flour with a little of the liquid and mix it back into the bulk</li>
+                <li>Add all the ingredients to the slow cooker and give a quick stir</li>
+                <li>Cook on low for 3.5 to 4 hours, stir once during cooking</li>
+            </ol>
+        </details>
+        <details>
+            <summary>Slow Cooker Rice Pudding</summary>
+            <p>Replace 150g of the milk with cream if you want a richer pudding.</p>
+                <table>
+<tr><td>Arborio rice</td><td class='quantity' data-value='100'>100</td><td class='uom'>g</td><td></td></tr>
+<tr><td>Milk</td><td class='quantity' data-value='650'>650</td><td class='uom'>g</td><td></td></tr>
+<tr><td>Sugar</td><td class='quantity' data-value='40'>40</td><td class='uom'>g</td><td>Caster sugar or brown sugar</td></tr>
+<tr><td>Vanilla flavouring</td><td class='quantity' data-value='1'>1</td><td class='uom'>tsp</td><td></td></tr>
+                </table>
+            <ol>
+                <li>Butter the slow cooker</li>
+                <li>Mix all the liquids and the sugar together and stir until the sugar is dissolved</li>
+                <li>Add all the ingredients and give a quick stir</li>
+                <li>Cook on low for 3.5 hours, stir once during cooking</li>
+            </ol>
+        </details>
+        <details>
+            <summary>Soda Bread</summary>
+                <table>
+<tr><td>SR flour</td><td class='quantity' data-value='350'>350</td><td class='uom'>g</td><td></td></tr>
+<tr><td>Bicarbonate of Soda</td><td class='quantity' data-value='1'>1</td><td class='uom'>teaspoon</td><td></td></tr>
+<tr><td>Salt</td><td class='quantity' data-value='1'>1</td><td class='uom'>tsp</td><td></td></tr>
+<tr><td>Butter Milk</td><td class='quantity' data-value='285'>285</td><td class='uom'>g</td><td>Alernatively use whole milk and replace 20g with lemon juice</td></tr>
+                </table>
+            <ol>
+                <li>Preheat the oven and a baking sheet to gas 4.</li>
+                <li>Mix flour, bicarb and salt in a large bowl.</li>
+                <li>Add the liquid and blend with a knife until it comes together as a very sticky dough.</li>
+                <li>Lightly flour the baking sheet and drop the ball of dough in the middle.</li>
+                <li>Roughly shape the dough and cut a large cross almost right through the full depth.</li>
+                <li>Bake it for 40 minutes.</li>
+            </ol>
+        </details>
+        <details>
+            <summary>Sponge Pudding</summary>
+                <table>
+<tr><td>SR flour</td><td class='quantity' data-value='120'>120</td><td class='uom'>g</td><td></td></tr>
+<tr><td>Margarine</td><td class='quantity' data-value='60'>60</td><td class='uom'>g</td><td></td></tr>
+<tr><td>Caster sugar</td><td class='quantity' data-value='60'>60</td><td class='uom'>g</td><td></td></tr>
+<tr><td>Egg</td><td class='quantity' data-value='1'>1</td><td class='uom'></td><td></td></tr>
+<tr><td>Milk</td><td class='quantity' data-value='0'>&nbsp;</td><td class='uom'></td><td></td></tr>
+                </table>
+            <ol>
+                <li>Blend sugar and margarine.</li>
+                <li>Mix in flour and egg.</li>
+                <li>Add milk to a soft dropping consistency.</li>
+                <li>Put in a bowl on top of jam and microwave for 11 mins on 30%.</li>
+            </ol>
+        </details>
+        <details>
+            <summary>Tartiflette</summary>
+            <p>You can substitute with any kind of cheese and still get a stunning result. Don't skip the wine its an integral part of the flavour.</p>
+                <table>
+<tr><td>Potatos</td><td class='quantity' data-value='1'>1</td><td class='uom'>kg</td><td></td></tr>
+<tr><td>Bacon lardons</td><td class='quantity' data-value='8'>8</td><td class='uom'>oz</td><td></td></tr>
+<tr><td>Shallots</td><td class='quantity' data-value='2'>2</td><td class='uom'></td><td></td></tr>
+<tr><td>Garlick</td><td class='quantity' data-value='1'>1</td><td class='uom'>Clove</td><td></td></tr>
+<tr><td>White wine</td><td class='quantity' data-value='100'>100</td><td class='uom'>ml</td><td></td></tr>
+<tr><td>Double cream</td><td class='quantity' data-value='200'>200</td><td class='uom'>ml</td><td></td></tr>
+<tr><td>Reblechon cheese</td><td class='quantity' data-value='1'>1</td><td class='uom'>lb</td><td></td></tr>
+                </table>
+            <ol>
+                <li>boil potatoes until almost cooked but stll firm enough to slice. Alternatively slice before cooking and steam until tender.</li>
+                <li>Fry the shallottes, garlick and bacon.</li>
+                <li>Slice the potatos and layer the solid ingredients alternately into a gratin dish.</li>
+                <li>Deglaze the pan frying pan with the wine and pour over the other ingedients.</li>
+                <li>Puor the cream over.</li>
+                <li>Spread the cheese on top.</li>
+                <li>10-15 minutes at gas 7 will melt and brown the cheese.</li>
+            </ol>
+        </details>
+        <details>
+            <summary>Toad in the Hole</summary>
+                <table>
+<tr><td>Water</td><td class='quantity' data-value='50'>50</td><td class='uom'>ml</td><td></td></tr>
+<tr><td>Milk</td><td class='quantity' data-value='75'>75</td><td class='uom'>ml</td><td></td></tr>
+<tr><td>Plain flour</td><td class='quantity' data-value='75'>75</td><td class='uom'>g</td><td></td></tr>
+<tr><td>Egg</td><td class='quantity' data-value='1'>1</td><td class='uom'></td><td></td></tr>
+<tr><td>Sausages</td><td class='quantity' data-value='4'>4</td><td class='uom'></td><td>(or maybe six?)</td></tr>
+                </table>
+            <ol>
+                <li>Beat flour, egg, milk and water to make batter.</li>
+                <li>Bake sausages for 10 minutes at Gas 7 in middle of oven.</li>
+                <li>Add a little oil if not much fat from sausages and return to top shelf for 5 mins.</li>
+                <li>Add batter and bake at the top of the oven for 30 mins turning down to five after ten minutes.</li>
+            </ol>
+        </details>
+        <details>
+            <summary>Tomato and beef Sauce</summary>
+            <p>Call it Bolognaise if you like!!</p>
+            <p>Serve it in lasagne or with spaghetti.</p>
+                <table>
+<tr><td>Minced beef</td><td class='quantity' data-value='400'>400</td><td class='uom'>g</td><td>The leaner the better</td></tr>
+<tr><td>Red Wine</td><td class='quantity' data-value='200'>200</td><td class='uom'>ml</td><td></td></tr>
+<tr><td>Chopped tomato</td><td class='quantity' data-value='1'>1</td><td class='uom'>pack</td><td></td></tr>
+<tr><td>Plain flour</td><td class='quantity' data-value='2'>2</td><td class='uom'>dsp</td><td></td></tr>
+                </table>
+            <ol>
+                <li>Cook the mince in the saucepan on a fairly high heat to brown it uniformly. Make sure the mince is broken up into fine pieces. Remove most, not all, of the fat and discard it.</li>
+                <li>Scatter in the flour to thicken and stir in.</li>
+                <li>Add the tomatoes and wine.</li>
+                <li>Simmer for 2 hours to develop the flavour add a little boiling water if required to keep the correct consistency.</li>
+            </ol>
+        </details>
+        <details>
+            <summary>Victoria Sponge</summary>
+            <p>You can go by the weights below but you will get more consistent results by weighing the eggs in their shells and use the same weight of caster sugar, margarine and flour.</p>
+                <table>
+<tr><td>Caster sugar</td><td class='quantity' data-value='8'>8</td><td class='uom'>oz</td><td></td></tr>
+<tr><td>Margarine</td><td class='quantity' data-value='8'>8</td><td class='uom'>oz</td><td></td></tr>
+<tr><td>SR flour</td><td class='quantity' data-value='8'>8</td><td class='uom'>oz</td><td></td></tr>
+<tr><td>Eggs</td><td class='quantity' data-value='4'>4</td><td class='uom'>each</td><td></td></tr>
+<tr><td>Milk</td><td class='quantity' data-value='0'>&nbsp;</td><td class='uom'>a little</td><td></td></tr>
+<tr><td>Butter or margarine</td><td class='quantity' data-value='100'>100</td><td class='uom'>g</td><td></td></tr>
+<tr><td>Icing sugar</td><td class='quantity' data-value='200'>200</td><td class='uom'>g</td><td></td></tr>
+                </table>
+            <ol>
+                <li>Beat Marg and caster sugar together.</li>
+                <li>Mix in a little of the flour and then add the eggs.</li>
+                <li>Mix in the remaining flour.</li>
+                <li>Add enough milk to give a soft dropping consistency.</li>
+                <li>Divide between two lined sandwich tins.</li>
+                <li>Bake at gas 3.5 for 38 minutes.</li>
+                <li>Fill with butter cream made by blending the icing sugar into the margarine.</li>
+            </ol>
+            <p>The key to getting a light well risen sponge is the beating of the fat and sugar together at the start. After that everything should be done gently to avoid driving out the air.</p>
+            <p>If you prefer to use a mechanical mixer you can put all the ingredients in and mix in one step, the power of the mixer will ensure the mix is aerated.</p>
+        </details>
+        <details>
+            <summary>Welsh Rarebit</summary>
+            <p>So much more than cheese on toast!</p>
+                <table>
+<tr><td>Butter</td><td class='quantity' data-value='25'>25</td><td class='uom'>g</td><td></td></tr>
+<tr><td>Plain flour</td><td class='quantity' data-value='1'>1</td><td class='uom'>tsp</td><td></td></tr>
+<tr><td>Mustard powder</td><td class='quantity' data-value='1'>1</td><td class='uom'>tsp</td><td></td></tr>
+<tr><td>Stout</td><td class='quantity' data-value='100'>100</td><td class='uom'>ml</td><td></td></tr>
+<tr><td>Worcester sauce</td><td class='quantity' data-value='1'>1</td><td class='uom'>tsp</td><td></td></tr>
+<tr><td>Cheddar cheese</td><td class='quantity' data-value='250'>250</td><td class='uom'>g</td><td></td></tr>
+<tr><td>Large egg yolks</td><td class='quantity' data-value='3'>3</td><td class='uom'>ea</td><td>Beaten</td></tr>
+<tr><td>Bread</td><td class='quantity' data-value='6'>6</td><td class='uom'>slices</td><td></td></tr>
+                </table>
+            <ol>
+                <li>Melt the butter in a saucepan and whisk in the flour and mustard powder. Cook for a minute or two, then gradually add the stout and the Worcestershire sauce, stirring constantly until smooth. Bring to the boil and immediately reduce the heat.</li>
+                <li>Add the cheese and stir until it has melted. Remove from the heat and leave to cool a little. Add the egg yolks and mix well.</li>
+                <li>Toast the bread, then arrange on a wire rack or baking tray. Spoon the sauce onto the toasted bread, spreading it out almost to the edges. Grill until browned and slightly puffed up. Serve immediately.</li>
+            </ol>
+        </details>
+        <details>
+            <summary>White sauce base</summary>
+            <p>This is a basic white sauce, add parsley, cheese or whatever to customise it.</p>
+                <table>
+<tr><td>Butter</td><td class='quantity' data-value='20'>20</td><td class='uom'>g</td><td></td></tr>
+<tr><td>Flour (plain)</td><td class='quantity' data-value='20'>20</td><td class='uom'>g</td><td></td></tr>
+<tr><td>Milk</td><td class='quantity' data-value='320'>320</td><td class='uom'>ml</td><td></td></tr>
+                </table>
+            <ol>
+                <li>Gently melt the butter in a pan and stir in the flour to make a smooth rue.</li>
+                <li>Carefully whisk in the milk, watch you don't add the milk too slowly and the heat to fast, you don't want it to cook too fast.</li>
+                <li>Gently heat without boiling until it thickens.</li>
+                <li>If it's not just a plain white sauce finally add the other ingredients.</li>
+            </ol>
+        </details>
+        <details>
+            <summary>White sauce corn flour thckened</summary>
+            <p>This is a basic white sauce base thickened with corn flour, add parsley, cheese or whatever to customise it.</p>
+                <table>
+<tr><td>Corn Flour</td><td class='quantity' data-value='2'>2</td><td class='uom'>dstsp</td><td>rounded</td></tr>
+<tr><td>Milk</td><td class='quantity' data-value='350'>350</td><td class='uom'>ml</td><td></td></tr>
+                </table>
+            <ol>
+                <li>Slake the cornflour with enough liquid to make it pour easily.</li>
+                <li>Bring the milk to boiling keep it on a very low heat.</li>
+                <li>Carefully whisk in the corn flour mix, keep whisking to prevent lumps.</li>
+                <li>Gently heat without boiling until it thickens.</li>
+            </ol>
+            <p>This is a basic fairly thick white sauce, tweak the proportions for the kind of result you are after.</p>
+            <p>If you are making a cheese sauce a little mustard and salt brings out the flavour.</p>
+        </details>
+        <details>
+            <summary>Yorkshire Puddings</summary>
+            <p>Makes big puffy yorkshires, scale as required.</p>
+            <p>A couple of things are vital for success, make sure the oven, tray and oil are really hot and don't open the oven door during cooking.</p>
+                <table>
+<tr><td>Plain Flour</td><td class='quantity' data-value='66'>66</td><td class='uom'>g</td><td></td></tr>
+<tr><td>eggs</td><td class='quantity' data-value='1'>1</td><td class='uom'>ea</td><td></td></tr>
+<tr><td>Milk</td><td class='quantity' data-value='100'>100</td><td class='uom'>ml</td><td></td></tr>
+                </table>
+            <ol>
+                <li>Stir the egg into the flour.</li>
+                <li>Gently whisk in the milk a little at a time and whisk to a smooth batter.</li>
+                <li>Leave the batter in the fridge for at least 30 minutes, ideally overnight.</li>
+                <li>Preheat the oven to Gas 7 then put a good pool of oil into the bottom of four cups in a yorkshire tray.</li>
+                <li>Take the hot tray and put 1/4 of the mix in each cup, put it straight back in the oven.</li>
+                <li>Cook for twenty five minutes, then check through the oven door, they might need a little longer.</li>
+            </ol>
+        </details>
+    </body>
+</html>
