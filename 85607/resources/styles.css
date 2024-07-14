@@ -1,0 +1,41 @@
+a {
+    color:blue;
+    text-decoration:none;
+    cursor:pointer;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:large;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:x-large;
+}
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:larger;
+}
+
+td{
+    background-color: #CCCCFF;
+    padding-left: 9px;
+    padding-right: 9px;
+    padding-top:2px;
+    padding-bottom:2px;
+}
+
+th{
+    background-color: #CCCCCC;
+    padding-left: 9px;
+    padding-right: 9px;
+    padding-top:2px;
+    padding-bottom:2px;
+}
+
+p {
+    margin-top:0px;
+    margin-bottom:7px;
+}

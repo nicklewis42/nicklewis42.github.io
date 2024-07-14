@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://unpkg.com/htmx.org@2.0.0" integrity="sha384-wS5l5IKJBvK6sPTKa2WZ1js3d947pvWXbPJ1OmWfEuxLgeHcEbjUUA5i9V5ZkpCw" crossorigin="anonymous"></script>
+    <script src="resources/script.js" ></script>
+    <link rel="stylesheet" href="resources/styles.css"></link>
+    <meta charset="utf-8" />
+    <title>Nick's recipes</title>
+</head>
+<body>
+    <a hx-get="/content/menu.html" hx-target="#workspace" hx-swap="innerHTML">Menu</a>
+    <div id="workspace" hx-trigger="load" hx-get="/content/menu.html" hx-swap="innerHTML">
+
+    </div>
+</body>
+</html>
+

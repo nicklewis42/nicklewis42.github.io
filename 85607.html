@@ -44,11 +44,16 @@ function scale() {
         scale = 1;
     for (var i = 0; i < qtys.length; i++) {
         var v = qtys[i].getAttribute("data-value");
-        if (v != 0) {
+        if (isNumber(v) && v != 0) {
             qtys[i].innerHTML = Math.round(v * scale*10)/10;
         }
     }
 }
+
+function isNumber(value) {
+    return !isNaN(parseFloat(value)) && isFinite(value);
+}
+
         </script>
     </head>
     </body>
@@ -59,14 +64,14 @@ function scale() {
                 <table>
 <tr><td>Fresh potato chips</td><td class='quantity' data-value='600'>600</td><td class='uom'>g</td><td>7-8 minutes at 160C</td></tr>
 <tr><td>Fresh fish</td><td class='quantity' data-value='450'>450</td><td class='uom'>g</td><td>5-7 minutes at 160C</td></tr>
-<tr><td>Chicken drumsticks</td><td class='quantity' data-value='4'>4</td><td class='uom'>pieces</td><td>12-15 minutes at 170C</td></tr>
-<tr><td>Veg eg Mushrooms Cauliflower</td><td class='quantity' data-value='8'>8</td><td class='uom'>pieces</td><td>2-3 minutes at 170C</td></tr>
+<tr><td>Chicken drumsticks</td><td class='quantity' data-value='3-5'>3-5</td><td class='uom'>pieces</td><td>12-15 minutes at 170C</td></tr>
+<tr><td>Veg eg Mushrooms Cauliflower</td><td class='quantity' data-value='8-10'>8-10</td><td class='uom'>pieces</td><td>2-3 minutes at 170C</td></tr>
 <tr><td>Frozen Chips</td><td class='quantity' data-value='450'>450</td><td class='uom'>g</td><td>5 minutes at 175C</td></tr>
-<tr><td>Potato Croquettes</td><td class='quantity' data-value='4'>4</td><td class='uom'>pieces</td><td>3-4 minutes at 175C</td></tr>
-<tr><td>Chicken Nuggets</td><td class='quantity' data-value='8'>8</td><td class='uom'>pieces</td><td>3-4 minutes at 180C</td></tr>
-<tr><td>Prawns</td><td class='quantity' data-value='10'>10</td><td class='uom'>pieces</td><td>3-4 minutes at 180C</td></tr>
-<tr><td>Camembert (breadcrumbed)</td><td class='quantity' data-value='3'>3</td><td class='uom'>pieces</td><td>2-3 minutes at 190C</td></tr>
-<tr><td>Doughnuts</td><td class='quantity' data-value='3'>3</td><td class='uom'>pieces</td><td>5-6 minutes at 190C</td></tr>
+<tr><td>Potato Croquettes</td><td class='quantity' data-value='4-5'>4-5</td><td class='uom'>pieces</td><td>3-4 minutes at 175C</td></tr>
+<tr><td>Chicken Nuggets</td><td class='quantity' data-value='8-10'>8-10</td><td class='uom'>pieces</td><td>3-4 minutes at 180C</td></tr>
+<tr><td>Prawns</td><td class='quantity' data-value='8-10'>8-10</td><td class='uom'>pieces</td><td>3-4 minutes at 180C</td></tr>
+<tr><td>Camembert (breadcrumbed)</td><td class='quantity' data-value='2-4'>2-4</td><td class='uom'>pieces</td><td>2-3 minutes at 190C</td></tr>
+<tr><td>Doughnuts</td><td class='quantity' data-value='3-4'>3-4</td><td class='uom'>pieces</td><td>5-6 minutes at 190C</td></tr>
 <tr><td>Aubergine slices</td><td class='quantity' data-value='600'>600</td><td class='uom'>g</td><td>3-4 minutes at 190C</td></tr>
                 </table>
             <ol>
@@ -124,8 +129,8 @@ function scale() {
         <details>
             <summary>Apple tarts</summary>
                 <table>
-<tr><td>Puff pastry</td><td class='quantity' data-value='0'>&nbsp;</td><td class='uom'></td><td>Buy ready made</td></tr>
-<tr><td>Eating Apples</td><td class='quantity' data-value='0'>&nbsp;</td><td class='uom'></td><td></td></tr>
+<tr><td>Puff pastry</td><td class='quantity' data-value=''></td><td class='uom'></td><td>Buy ready made</td></tr>
+<tr><td>Eating Apples</td><td class='quantity' data-value=''></td><td class='uom'></td><td></td></tr>
                 </table>
             <ol>
                 <li>Roll out the puff pastry about 3-4 mm thick</li>
@@ -157,7 +162,7 @@ function scale() {
             <summary>Baked Eggs</summary>
             <p>Baked eggs</p>
                 <table>
-<tr><td>Egg</td><td class='quantity' data-value='1'>1</td><td class='uom'>ea</td><td></td></tr>
+<tr><td>Egg</td><td class='quantity' data-value='q or 2'>q or 2</td><td class='uom'>ea</td><td></td></tr>
                 </table>
             <ol>
                 <li>Grease a ramikin with butter</li>
@@ -253,7 +258,7 @@ function scale() {
                 <table>
 <tr><td>Butter</td><td class='quantity' data-value='100'>100</td><td class='uom'>g</td><td>Soften the butter first</td></tr>
 <tr><td>icing sugar</td><td class='quantity' data-value='200'>200</td><td class='uom'>g</td><td>Sifted</td></tr>
-<tr><td>Milk</td><td class='quantity' data-value='0'>&nbsp;</td><td class='uom'></td><td>As required</td></tr>
+<tr><td>Milk</td><td class='quantity' data-value=''></td><td class='uom'></td><td>As required</td></tr>
                 </table>
             <ol>
                 <li>Beat the softened butter until smooth</li>
@@ -410,13 +415,13 @@ function scale() {
                 <table>
 <tr><td>Eggs</td><td class='quantity' data-value='6'>6</td><td class='uom'>ea</td><td></td></tr>
 <tr><td>Cream</td><td class='quantity' data-value='150'>150</td><td class='uom'>ml</td><td></td></tr>
-<tr><td>Grated Cheese</td><td class='quantity' data-value='0'>&nbsp;</td><td class='uom'></td><td>Strong cheddar is good but whatever works for you.</td></tr>
+<tr><td>Grated Cheese</td><td class='quantity' data-value=''></td><td class='uom'></td><td>Strong cheddar is good but whatever works for you.</td></tr>
 <tr><td>Potatoes</td><td class='quantity' data-value='500'>500</td><td class='uom'>g</td><td></td></tr>
-<tr><td>Peas</td><td class='quantity' data-value='0'>&nbsp;</td><td class='uom'></td><td>optional</td></tr>
-<tr><td>Bacon</td><td class='quantity' data-value='0'>&nbsp;</td><td class='uom'></td><td>optional</td></tr>
-<tr><td>Sausages</td><td class='quantity' data-value='0'>&nbsp;</td><td class='uom'></td><td>optional</td></tr>
-<tr><td>Mushrooms</td><td class='quantity' data-value='0'>&nbsp;</td><td class='uom'></td><td>optional</td></tr>
-<tr><td>Milk</td><td class='quantity' data-value='0'>&nbsp;</td><td class='uom'></td><td>As required</td></tr>
+<tr><td>Peas</td><td class='quantity' data-value=''></td><td class='uom'></td><td>optional</td></tr>
+<tr><td>Bacon</td><td class='quantity' data-value=''></td><td class='uom'></td><td>optional</td></tr>
+<tr><td>Sausages</td><td class='quantity' data-value=''></td><td class='uom'></td><td>optional</td></tr>
+<tr><td>Mushrooms</td><td class='quantity' data-value=''></td><td class='uom'></td><td>optional</td></tr>
+<tr><td>Milk</td><td class='quantity' data-value=''></td><td class='uom'></td><td>As required</td></tr>
                 </table>
             <ol>
                 <li>Peel the potatoes and cut into half inch cubes.</li>
@@ -437,7 +442,7 @@ function scale() {
 <tr><td>butter</td><td class='quantity' data-value='110'>110</td><td class='uom'>g</td><td></td></tr>
 <tr><td>Caster sugar</td><td class='quantity' data-value='110'>110</td><td class='uom'>g</td><td></td></tr>
 <tr><td>eggs</td><td class='quantity' data-value='1'>1</td><td class='uom'></td><td></td></tr>
-<tr><td>Milk</td><td class='quantity' data-value='0'>&nbsp;</td><td class='uom'></td><td></td></tr>
+<tr><td>Milk</td><td class='quantity' data-value=''></td><td class='uom'></td><td></td></tr>
 <tr><td>dried fruit</td><td class='quantity' data-value='225'>225</td><td class='uom'>g</td><td></td></tr>
 <tr><td>Mixed spice</td><td class='quantity' data-value='1'>1</td><td class='uom'>tsp</td><td></td></tr>
                 </table>
@@ -484,11 +489,11 @@ function scale() {
             <p>Lightly spiced lasagne bolognaise with home made pasta.</p>
                 <table>
 <tr><td>eggs</td><td class='quantity' data-value='5'>5</td><td class='uom'>ea</td><td></td></tr>
-<tr><td>00 flour</td><td class='quantity' data-value='0'>&nbsp;</td><td class='uom'></td><td>As much as needed for the eggs</td></tr>
+<tr><td>00 flour</td><td class='quantity' data-value=''></td><td class='uom'></td><td>As much as needed for the eggs</td></tr>
 <tr><td>finely minced beef</td><td class='quantity' data-value='500'>500</td><td class='uom'>g</td><td></td></tr>
 <tr><td>Passata</td><td class='quantity' data-value='500'>500</td><td class='uom'>g</td><td></td></tr>
 <tr><td>Chorizo sausage</td><td class='quantity' data-value='2'>2</td><td class='uom'></td><td>2 Med size sausages but to taste</td></tr>
-<tr><td>Grated cheese</td><td class='quantity' data-value='0'>&nbsp;</td><td class='uom'></td><td>For topping</td></tr>
+<tr><td>Grated cheese</td><td class='quantity' data-value=''></td><td class='uom'></td><td>For topping</td></tr>
                 </table>
             <ol>
                 <li>Mix flour into the eggs until a soft dough is formed. This needs to be refrigerated for at least an hour.</li>
@@ -506,12 +511,12 @@ function scale() {
         <details>
             <summary>Minestrone Soup</summary>
                 <table>
-<tr><td>Carrot</td><td class='quantity' data-value='0'>&nbsp;</td><td class='uom'></td><td></td></tr>
-<tr><td>Onion</td><td class='quantity' data-value='0'>&nbsp;</td><td class='uom'></td><td></td></tr>
-<tr><td>Potato</td><td class='quantity' data-value='0'>&nbsp;</td><td class='uom'></td><td></td></tr>
-<tr><td>Chicken Stock</td><td class='quantity' data-value='0'>&nbsp;</td><td class='uom'></td><td></td></tr>
-<tr><td>Small pasta pieces</td><td class='quantity' data-value='0'>&nbsp;</td><td class='uom'></td><td>Orzo or other small pasta will be fine</td></tr>
-<tr><td>Garlick puree</td><td class='quantity' data-value='0'>&nbsp;</td><td class='uom'></td><td></td></tr>
+<tr><td>Carrot</td><td class='quantity' data-value=''></td><td class='uom'></td><td></td></tr>
+<tr><td>Onion</td><td class='quantity' data-value=''></td><td class='uom'></td><td></td></tr>
+<tr><td>Potato</td><td class='quantity' data-value=''></td><td class='uom'></td><td></td></tr>
+<tr><td>Chicken Stock</td><td class='quantity' data-value=''></td><td class='uom'></td><td></td></tr>
+<tr><td>Small pasta pieces</td><td class='quantity' data-value=''></td><td class='uom'></td><td>Orzo or other small pasta will be fine</td></tr>
+<tr><td>Garlick puree</td><td class='quantity' data-value=''></td><td class='uom'></td><td></td></tr>
                 </table>
             <ol>
                 <li>Chop the veg to a size that works for you but that should be pretty fine. Especially for the onion.</li>
@@ -541,7 +546,7 @@ function scale() {
             <summary>Pan Fried Mackeral</summary>
             <p>Delightful light moist fish.</p>
                 <table>
-<tr><td>Mackeral Fillets, skin on.</td><td class='quantity' data-value='0'>&nbsp;</td><td class='uom'></td><td>One per person as a starter, maybe two for a generous main.</td></tr>
+<tr><td>Mackeral Fillets, skin on.</td><td class='quantity' data-value=''></td><td class='uom'></td><td>One per person as a starter, maybe two for a generous main.</td></tr>
                 </table>
             <ol>
                 <li>Get your frying pan really hot.</li>
@@ -598,12 +603,12 @@ function scale() {
                 <table>
 <tr><td>Short crust pastry</td><td class='quantity' data-value='250'>250</td><td class='uom'>g</td><td></td></tr>
 <tr><td>eggs</td><td class='quantity' data-value='4'>4</td><td class='uom'>ea</td><td>Depending on size</td></tr>
-<tr><td>Bacon</td><td class='quantity' data-value='0'>&nbsp;</td><td class='uom'></td><td>optional</td></tr>
-<tr><td>Sausages</td><td class='quantity' data-value='0'>&nbsp;</td><td class='uom'></td><td>optional</td></tr>
-<tr><td>Cheese</td><td class='quantity' data-value='0'>&nbsp;</td><td class='uom'></td><td>optional</td></tr>
-<tr><td>Mushrooms</td><td class='quantity' data-value='0'>&nbsp;</td><td class='uom'></td><td>optional</td></tr>
+<tr><td>Bacon</td><td class='quantity' data-value=''></td><td class='uom'></td><td>optional</td></tr>
+<tr><td>Sausages</td><td class='quantity' data-value=''></td><td class='uom'></td><td>optional</td></tr>
+<tr><td>Cheese</td><td class='quantity' data-value=''></td><td class='uom'></td><td>optional</td></tr>
+<tr><td>Mushrooms</td><td class='quantity' data-value=''></td><td class='uom'></td><td>optional</td></tr>
 <tr><td>Cream</td><td class='quantity' data-value='150'>150</td><td class='uom'>ml</td><td>Optional</td></tr>
-<tr><td>Milk</td><td class='quantity' data-value='0'>&nbsp;</td><td class='uom'></td><td>As required</td></tr>
+<tr><td>Milk</td><td class='quantity' data-value=''></td><td class='uom'></td><td>As required</td></tr>
                 </table>
             <ol>
                 <li>Roll out pastry and shape into lightly greased flan tin, prick the bottom of the case with a fork.</li>
@@ -625,7 +630,7 @@ function scale() {
             <p>This is how you cook white rice by the absorption method.</p>
                 <table>
 <tr><td>Dried rice</td><td class='quantity' data-value='75'>75</td><td class='uom'>g</td><td>per person</td></tr>
-<tr><td>Water</td><td class='quantity' data-value='0'>&nbsp;</td><td class='uom'></td><td>Twice the rice by volume</td></tr>
+<tr><td>Water</td><td class='quantity' data-value=''></td><td class='uom'></td><td>Twice the rice by volume</td></tr>
                 </table>
             <ol>
                 <li>Wash the rice thoroughy in a sieve under the cold tap.</li>
@@ -640,12 +645,12 @@ function scale() {
             <p>This recipe is for the base add peas, chicken, mushrooms etc. etc... About enough for 2 or 3.</p>
             <p>If you want to do this in a slow cooker use 150g rice to 600g stock and cook on high, it should take about an hour and a half.</p>
                 <table>
-<tr><td>Onions</td><td class='quantity' data-value='0'>&nbsp;</td><td class='uom'></td><td>A single onion is great or a few shallots</td></tr>
+<tr><td>Onions</td><td class='quantity' data-value=''></td><td class='uom'></td><td>A single onion is great or a few shallots</td></tr>
 <tr><td>Risotto rice</td><td class='quantity' data-value='170'>170</td><td class='uom'>g</td><td></td></tr>
 <tr><td>Chicken stock</td><td class='quantity' data-value='1000'>1000</td><td class='uom'>ml</td><td>Vegetable stock if you want a veggie version</td></tr>
-<tr><td>Butter</td><td class='quantity' data-value='0'>&nbsp;</td><td class='uom'></td><td>A couple of knobs</td></tr>
-<tr><td>Oil</td><td class='quantity' data-value='0'>&nbsp;</td><td class='uom'></td><td></td></tr>
-<tr><td>Finely grated cheese</td><td class='quantity' data-value='0'>&nbsp;</td><td class='uom'></td><td>To finish</td></tr>
+<tr><td>Butter</td><td class='quantity' data-value=''></td><td class='uom'></td><td>A couple of knobs</td></tr>
+<tr><td>Oil</td><td class='quantity' data-value=''></td><td class='uom'></td><td></td></tr>
+<tr><td>Finely grated cheese</td><td class='quantity' data-value=''></td><td class='uom'></td><td>To finish</td></tr>
                 </table>
             <ol>
                 <li>Prepare the stock and bring it to the boil then leave the pan on a very low heat.</li>
@@ -676,7 +681,7 @@ function scale() {
 <tr><td>Chicken Breast</td><td class='quantity' data-value='2'>2</td><td class='uom'>Each</td><td>Med size breasts</td></tr>
 <tr><td>Smoked paprika</td><td class='quantity' data-value='0.5'>0.5</td><td class='uom'>Teaspoon</td><td>Unsmoked is fine if you prefer</td></tr>
 <tr><td>Soft brown sugar</td><td class='quantity' data-value='2'>2</td><td class='uom'>teaspoon</td><td></td></tr>
-<tr><td>Salt and pepper</td><td class='quantity' data-value='0'>&nbsp;</td><td class='uom'></td><td></td></tr>
+<tr><td>Salt and pepper</td><td class='quantity' data-value='to taste'>to taste</td><td class='uom'></td><td></td></tr>
                 </table>
             <ol>
                 <li>Preheat the oven to gas 7.</li>
@@ -698,8 +703,8 @@ function scale() {
             <summary>Roast Potatoes</summary>
                 <table>
 <tr><td>Plain flour</td><td class='quantity' data-value='1'>1</td><td class='uom'>Little</td><td></td></tr>
-<tr><td>Potatoes</td><td class='quantity' data-value='0'>&nbsp;</td><td class='uom'></td><td>As required</td></tr>
-<tr><td>Oil / Fat</td><td class='quantity' data-value='0'>&nbsp;</td><td class='uom'></td><td>Whatever your taste</td></tr>
+<tr><td>Potatoes</td><td class='quantity' data-value=''></td><td class='uom'></td><td>As required</td></tr>
+<tr><td>Oil / Fat</td><td class='quantity' data-value=''></td><td class='uom'></td><td>Whatever your taste</td></tr>
                 </table>
             <ol>
                 <li>Put a roasting tin in the oven (one big enough to take the potatoes in a single layer) and heat oven to gas 7.</li>
@@ -741,11 +746,11 @@ function scale() {
                 <table>
 <tr><td>Double cream</td><td class='quantity' data-value='300'>300</td><td class='uom'>g</td><td></td></tr>
 <tr><td>Full fat milk</td><td class='quantity' data-value='200'>200</td><td class='uom'>g</td><td></td></tr>
-<tr><td>Raisins</td><td class='quantity' data-value='0'>&nbsp;</td><td class='uom'></td><td></td></tr>
+<tr><td>Raisins</td><td class='quantity' data-value=''></td><td class='uom'></td><td></td></tr>
 <tr><td>Mixed spice</td><td class='quantity' data-value='0.5'>0.5</td><td class='uom'>tsp</td><td></td></tr>
 <tr><td>Cinammon</td><td class='quantity' data-value='0.5'>0.5</td><td class='uom'>tsp</td><td></td></tr>
-<tr><td>Dark Rum</td><td class='quantity' data-value='0'>&nbsp;</td><td class='uom'></td><td></td></tr>
-<tr><td>Gelatin</td><td class='quantity' data-value='0'>&nbsp;</td><td class='uom'></td><td>Enough to set a pint or so</td></tr>
+<tr><td>Dark Rum</td><td class='quantity' data-value=''></td><td class='uom'></td><td></td></tr>
+<tr><td>Gelatin</td><td class='quantity' data-value=''></td><td class='uom'></td><td>Enough to set a pint or so</td></tr>
                 </table>
             <ol>
                 <li>Pour enough rum to cover over the fruit, leave to soak up the liquid for a couple of hours or overnight.</li>
@@ -764,7 +769,7 @@ function scale() {
 <tr><td>Baking powder</td><td class='quantity' data-value='1'>1</td><td class='uom'>teaspoon</td><td></td></tr>
 <tr><td>Butter</td><td class='quantity' data-value='85'>85</td><td class='uom'>g</td><td></td></tr>
 <tr><td>Caster sugar</td><td class='quantity' data-value='42'>42</td><td class='uom'>g</td><td></td></tr>
-<tr><td>Salt</td><td class='quantity' data-value='0.25'>0.25</td><td class='uom'>teaspoon</td><td></td></tr>
+<tr><td>Salt</td><td class='quantity' data-value='1/4'>1/4</td><td class='uom'>teaspoon</td><td></td></tr>
 <tr><td>Milk</td><td class='quantity' data-value='175'>175</td><td class='uom'>ml</td><td></td></tr>
 <tr><td>Vanilla extract</td><td class='quantity' data-value='1'>1</td><td class='uom'>teaspoon</td><td></td></tr>
 <tr><td>Lemon juice</td><td class='quantity' data-value='1'>1</td><td class='uom'>teaspoon</td><td></td></tr>
@@ -915,7 +920,7 @@ function scale() {
 <tr><td>Margarine</td><td class='quantity' data-value='60'>60</td><td class='uom'>g</td><td></td></tr>
 <tr><td>Caster sugar</td><td class='quantity' data-value='60'>60</td><td class='uom'>g</td><td></td></tr>
 <tr><td>Egg</td><td class='quantity' data-value='1'>1</td><td class='uom'></td><td></td></tr>
-<tr><td>Milk</td><td class='quantity' data-value='0'>&nbsp;</td><td class='uom'></td><td></td></tr>
+<tr><td>Milk</td><td class='quantity' data-value=''></td><td class='uom'></td><td></td></tr>
                 </table>
             <ol>
                 <li>Blend sugar and margarine.</li>
@@ -987,7 +992,7 @@ function scale() {
 <tr><td>Margarine</td><td class='quantity' data-value='8'>8</td><td class='uom'>oz</td><td></td></tr>
 <tr><td>SR flour</td><td class='quantity' data-value='8'>8</td><td class='uom'>oz</td><td></td></tr>
 <tr><td>Eggs</td><td class='quantity' data-value='4'>4</td><td class='uom'>each</td><td></td></tr>
-<tr><td>Milk</td><td class='quantity' data-value='0'>&nbsp;</td><td class='uom'>a little</td><td></td></tr>
+<tr><td>Milk</td><td class='quantity' data-value=''></td><td class='uom'>a little</td><td></td></tr>
 <tr><td>Butter or margarine</td><td class='quantity' data-value='100'>100</td><td class='uom'>g</td><td></td></tr>
 <tr><td>Icing sugar</td><td class='quantity' data-value='200'>200</td><td class='uom'>g</td><td></td></tr>
                 </table>
